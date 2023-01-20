@@ -26,6 +26,6 @@ public class OperationalControlIntegrationTest {
         result.andExpect(status().isOk());
         String resultData1 = result.andReturn().getResponse().getContentAsString();
        //Assertions.assertEquals(resultData,15);
-        Assertions.assertEquals(resultData1, 20);
+        Assertions.assertEquals(resultData1, "20");
     }
 }
